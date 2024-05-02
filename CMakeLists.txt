@@ -22,4 +22,4 @@ add_executable(pal_example
 )
 
 target_link_libraries(pal_example pal_engine)
-target_include_directories(pal_example ${CMAKE_SOURCE_DIR}/include)
+target_include_directories(pal_example PUBLIC include)
