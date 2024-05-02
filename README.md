@@ -1,9 +1,14 @@
-# PAL Engine Base Project
+# Palygon SDL2 Sim
 
-This project shows how to setup a project using the PAL engine. To begin, fork this repo and implement the functions in `pal.c` according to the project's desired backend. An example using SDL2 exists on the branch `sdl2-example`.
+This project is an example usage of the [PAL engine](https://github.com/benthacher/pal-engine) built on linux using SDL2 as a backend. Currently it's being used to flesh out the PAL engine while hardware design is finalized.
 
-Don't get too attached to anything you make with the engine as it's still very basic and the interfaces exposed in `pal.c/.h` will likely be changed in this stage of development.
+## Running
 
-## Usage
+### Prerequisites
 
-As long as all prerequisites are installed (cmake and python), the `setup.sh` script can be run to initialize the PAL submodule and utilities used in it.
+- cmake
+    - Installing cmake can be annoying, I'd just follow [their instructions from their download page](https://cmake.org/download/)
+- SDL2
+    - Depending on your platform, SDL2 dev libraries are probably included in your package manager, but if not, follow [these instructions from their website](https://wiki.libsdl.org/SDL2/Installation)
+- Python and venv
+    - Python is used for converting sprites and midi files to code usable by the engine. `venv` is used for python environment management, and is required to run the utils in the `util` directory. To install the requirements and make the virtual environment, just run the `setup.sh` script.
