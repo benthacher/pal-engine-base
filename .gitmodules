@@ -1,0 +1,3 @@
+[submodule "pal-engine"]
+	path = pal-engine
+	url = git@github.com:benthacher/pal-engine.git
